@@ -1,0 +1,30 @@
+@use '../../scss/' as *;
+
+.styled-list {
+
+    .ant-col {
+        height: 100%;
+    }
+    .ant-row {
+        @include tablet {
+            justify-content: center;
+        }
+    }
+    .ant-list-item {
+        height: 100%;
+        a {
+            @include tablet {
+                display: flex;
+                align-items: center;
+            }
+
+            .card-item {
+                width: 250px;
+                height: '100%';
+                border-radius: '20px';
+                overflow: 'hidden';
+                
+            }
+        }
+    }
+}

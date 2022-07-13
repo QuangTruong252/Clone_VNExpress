@@ -1,0 +1,41 @@
+@use '../../scss/' as *;
+
+.home {
+    margin-top: 2rem;
+    h2 {
+        font-weight: 500;
+        font-size: 30px;
+        color: $main-color;
+        margin-bottom: 0;
+        @include tablet {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+    }
+
+    .section__header {
+        @include flex(flex-end, flex-start);
+        @include tablet {
+            display: block;
+        }
+        column-gap: 10px;
+        margin-bottom: 10px;
+        .sub {
+            @include flex(center, flex-start);
+            & > a ~ a {
+                border-left: 1px solid #999;
+                line-height: 16px;
+            }
+            a {
+                margin-bottom: 7px;
+                font-size: 16px;
+                padding:0 10px;
+                @include mobile {
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}

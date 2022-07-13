@@ -1,0 +1,100 @@
+@use "../../scss/" as *;
+
+.footer {
+    padding-top: 40px;
+    &__content {
+
+        &-top {
+            display: grid;
+            grid-template-columns: auto 30%;
+            padding: 20px 0px;
+            column-gap: 30px;
+            border-top: 5px solid #eee;
+            border-bottom: 1px solid #777;
+            @include tablet {
+                display: block;
+            }
+        }
+        &__menus {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) ;
+            border-right: 1px solid #333;
+
+            @include mobile {
+                display: none;
+            }
+
+            @include tablet {
+                padding-bottom: 20px;
+                border-right: none;
+                border-bottom: 1px solid #333;
+            }
+        }
+        
+        &__menu {
+            @include flex(flex-start, flex-start);
+            flex-direction: column;
+            margin-top: 1rem;
+            
+            font-size: 1rem;
+            &:first-child {
+                font-weight: 500;
+                a {
+                    font-weight: 600;
+                }
+            }
+            
+            a {
+                font-weight: 300;
+            }
+            
+            & > * ~ * {
+                margin-top: 1rem;
+            }
+        }
+
+        &__contact {
+            .item {
+                margin-bottom: 10px;
+                & > p {
+                    color: #757575;
+                    margin-bottom: 5px;
+                }
+                .link {
+                    display: flex;
+                    column-gap: 10px;
+                    & > div > p {
+                        font-weight: 700;
+                    }
+                }
+                svg, img {
+                    margin-right: 5px;
+                }
+            }
+            @include tablet {
+                padding-top: 20px;
+            }
+        }
+
+        &-bottom {
+            padding: 20px 0px;
+            @include flex(center, space-between);
+            @include mobile {
+                flex-direction: column;
+                row-gap: 20px;
+            }
+
+            .logo {
+                @include flex(center, space-between);
+                column-gap: 10px;
+            }
+
+            .address {
+                p {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+        
+    }
+}

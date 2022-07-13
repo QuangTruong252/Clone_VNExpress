@@ -1,0 +1,12 @@
+@use '../../scss/' as *;
+
+.search {
+    .container {
+        margin-top: 40px;
+    }
+    h2 {
+        font-size: 30px;
+        color: $main-color;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,19 @@
+.news-list {
+    .ant-list-item {
+        padding-left: 0px;
+    }
+    .default {
+        max-height: 600px;
+        overflow-y: scroll;
+        .title {
+            font-size: 15px;
+        }
+        .ant-list-item-extra {
+            margin-left: 10px;
+            & > img {
+                height: 60px;
+                margin-top: 20px;
+            }
+        }
+    }
+}

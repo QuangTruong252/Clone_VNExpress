@@ -1,0 +1,63 @@
+@use './scss/' as *;
+@import '~antd/dist/antd.css';
+
+@import 'react-slideshow-image/dist/styles.css';
+
+
+a {
+    color: #000;
+    font-weight: 500;
+    &:hover {
+        color: $main-color;
+    }
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.active {
+    color: $main-color;
+}
+
+
+
+.container {
+    padding: 0 $padding-pc;
+    @include tablet {
+        padding: 10px $padding-table;
+    }
+}
+
+
+// Custom Scroll
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: $body-bg;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: $body-bg;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear,left bottom,left top,
+									color-stop(0.44, rgba($main-color, 0.5)),
+									color-stop(0.72, rgba($main-color, 0.8)),
+									color-stop(0.86, $main-color));
+}

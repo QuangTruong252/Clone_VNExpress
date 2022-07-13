@@ -1,0 +1,177 @@
+[
+    {
+        "id": 0,
+        "cate": "",
+        "title": "Thời sự",
+        "sub": [
+            "Chính trị",
+            "Dân sinh",
+            "Lao động - Việc làm",
+            "Giao thông",
+            "Me Kong",
+            "Quỹ hy vọng"
+        ]
+    },
+    {
+        "id": 1,
+        "cate": "business",
+        "title": "Kinh doanh",
+        "sub": [
+            "Quốc tế",
+            "Doanh nghiệp",
+            "Chứng khoáng",
+            "Bất động sản",
+            "Ebank",
+            "Vĩ mô",
+            "Tiền của tôi",
+            "Bảo hiểm",
+            "Hàng hóa",
+            "Vhome",
+            "eBox"
+        ]
+    },
+    {
+        "id": 2,
+        "cate": "entertainment",
+        "title": "Giải trí",
+        "sub": [
+            "Giới sao",
+            "Video",
+            "Phim",
+            "Nhạc",
+            "Thời trang",
+            "Làm đẹp",
+            "Sách",
+            "Sân khấu - Mỹ thuật"
+        ]
+    },
+    {
+        "id": 3,
+        "cate": "sports",
+        "title": "Thể thao",
+        "sub": [
+            "Bóng đá",
+            "Lịch thi đấu",
+            "Tennis",
+            "VM 2022",
+            "Fun Run",
+            "Bundesliga",
+            "Các môn khác"
+        ]
+    },
+    {
+        "id": 4,
+        "cate": "",
+        "title": "Pháp luật",
+        "sub": [
+            "Hồ sơ phá án",
+            "Tư vấn",
+            "Video"
+        ]
+    },
+    {
+        "id": 5,
+        "cate": "health",
+        "title": "Sức khỏe",
+        "sub": [
+            "Tin tức",
+            "Tư vấn",
+            "Dinh dưỡng",
+            "Khỏe đẹp",
+            "Đàn ông",
+            "Các bệnh",
+            "Vaccine",
+            "Di chứng Covid",
+            "Di truyền"
+        ]
+    },
+    {
+        "id": 6,
+        "cate": "",
+        "title": "Du lịch",
+        "sub": [
+            "Điểm đến",
+            "Ẩm thực",
+            "Dấu chân",
+            "Tư vấn"
+        ]
+    },
+    {
+        "id": 7,
+        "cate": "general",
+        "title": "Đời sống",
+        "sub": [
+            "Tổ ấm",
+            "Bài học sống",
+            "Nhà",
+            "Tiêu dùng"
+        ]
+    },
+    {
+        "id": 8,
+        "cate": "",
+        "title": "Xe",
+        "sub": [
+            "Thị trường",
+            "Cầm lái",
+            "Diễn đàn",
+            "V-Car",
+            "Thi bằng lái",
+            "Mua bán"
+        ]
+    },
+    {
+        "id": 9,
+        "cate": "",
+        "title": "Ý kiến",
+        "sub": [
+            "Thời sự",
+            "Đời sống"
+        ]
+    },
+    {
+        "id": 10,
+        "cate": "",
+        "title": "Tâm sự",
+        "sub": [
+            "Chuyên gia gỡ rối",
+            "Hẹn hò"
+        ]
+    },
+    {
+        "id": 11,
+        "cate": "science",
+        "title": "Khoa học",
+        "sub": [
+            "Khoa học trong nước",
+            "Tin tức",
+            "Phát minh",
+            "Ứng dụng",
+            "Thế giới tự nhiên",
+            "Thường thức",
+            "Sáng kiến Khoa học"
+        ]
+    },
+    {
+        "id": 12,
+        "cate": "",
+        "title": "Video",
+        "sub": [
+            "Thời sự",
+            "Nhịp sống",
+            "Food",
+            "Tôi kể"
+        ]
+    },
+    {
+        "id": 13,
+        "cate": "",
+        "title": "Hài",
+        "sub": [
+            "Cười",
+            "Đố vui",
+            "Chuyện lạ",
+            "Thú cưng"
+        ]
+    }
+]

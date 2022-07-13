@@ -1,0 +1,88 @@
+@use '../../scss/' as *;
+
+.styled-ant-modal {
+    top: 10px;
+    width: 100% !important;
+    height: 100%;
+    background-color: #f7f7f7;
+}
+.modal__content {
+    height: 100%;
+    &-header {
+        margin: 0px $padding-pc;
+        @include tablet {
+            margin: 0 $padding-table;
+        }
+        border-bottom: 1px solid #bdbdbd;
+        h2 {
+            width: 100%;
+        }
+    }
+    .container {
+        display: grid;
+        grid-template-columns: auto 15%;
+        @include tablet {
+            grid-template-columns: auto 30%;
+        }
+        @include mobile {
+            display: block;
+        }
+        column-gap: 20px;
+        padding-top: 20px;
+        a {
+            padding: 5px 0px;
+            font-weight: 400;
+            color: #333;
+            &:hover {
+                color: $main-color;
+                text-decoration: underline;
+            }
+        }
+        .left {
+            max-height: calc(100vh - 130px);
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) ;
+            row-gap: 20px;
+            border-right: 1px solid #bdbdbd;
+            overflow-y: scroll;
+            .modal__content-item {
+                display: flex;
+                flex-direction: column;
+                a {
+                    &:first-child {
+                        font-weight: 600;
+                        color: $main-color;
+                        font-size: 17px;
+                    }
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .right {
+            overflow-y: scroll;
+            max-height: calc(100vh - 130px);
+            height: 100%;
+            & > div ~ div {
+                border-top: 1px solid #bdbdbd;
+            }
+            div {
+                @include flex(flex-start, flex-start);
+                flex-direction: column;
+                
+                &:nth-child(1) , &:nth-child(2) {
+                    a {
+                        font-weight: 600;
+                        font-size: 17px;
+                    }
+                }
+                img, span {
+                    margin-right: 5px;
+                }
+                .ant-btn {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

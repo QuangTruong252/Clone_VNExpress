@@ -1,0 +1,33 @@
+@use '../../scss/' as *;
+
+.page-header {
+    padding: 20px 0px;
+    .container {
+        @include flex(flex-start, space-between);
+        @include mobile {
+            flex-wrap: wrap;
+        }
+    }
+    .right {
+        .title {
+            font-size: 2.1rem;
+            font-weight: 700;
+            color: $main-color;
+            font-family: "Merriweather",serif;
+            
+        }
+        .subs {
+            @include flex(center, flex-start);
+            column-gap: 20px;
+            padding: 10px 0px;
+        }
+    }
+    .left {
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 18px;
+        font-weight: 600;
+        row-gap: 10px;
+        color: $main-color;
+    }
+}

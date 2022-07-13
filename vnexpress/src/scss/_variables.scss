@@ -1,0 +1,33 @@
+html[data-theme='dark'] {
+  --color: rgb(250, 250, 250);
+  --background-color: rgb(5, 5, 5);
+}
+
+html[data-theme='light'] {
+  --color: rgb(5, 5, 5);
+  --background-color: rgb(250, 250, 250);
+}
+
+$body-bg: var(--background-color);
+$main-color: #b52759;
+$main-color-light: #4380b1;
+$txt-color: var(--color);
+
+$white: #fff;
+$black: #000;
+
+$padding-pc: 200px;
+$padding-table: 40px;
+
+$box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+$header-height: 50px;
+$header-shrink-height: 50px;
+$bg-header: #fff;
+
+$border-radius: 20px;
+
+$mobile-width: 600px;
+$tablet-width: 1024px;
+
+$font-family: 'Montserrat', sans-serif;

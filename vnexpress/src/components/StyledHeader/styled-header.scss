@@ -1,0 +1,111 @@
+@use '../../scss/' as *;
+
+.styled-header {
+    background-color: $bg-header;
+    padding: 0;
+    height: fit-content;
+    .container-header {
+        height: $header-height;
+        padding: 0 $padding-pc;
+        color: #757575;
+        @include tablet {
+            padding: 0 $padding-table;
+            height: fit-content;
+        }
+        @include flex(center, space-between);
+        @include mobile {
+            flex-wrap: wrap;
+        }
+        .space {
+            height: 25px;
+            width: 1px;
+            background-color: #757575;
+        }
+        .left, .right {
+            @include flex(center, space-around);
+            column-gap: 20px;
+            svg {
+                width: 16px;
+                height: 16px;
+            }
+            img {
+                margin-right: 5px;
+            }
+            .ant-btn {
+                @include flex(center, center);
+            }
+        }
+
+        .btn-all-trigger {
+            display: none !important;
+            @include tablet {
+                display: block !important;
+            }
+        }
+
+        .time-now, .space, .right-btn {
+            @include tablet {
+                display: none;
+            }
+        }
+
+        .styled-input {
+            width: 150px;
+            button {
+                border-left: transparent;
+            }
+        }
+        .login-btn {
+            border: 1px solid transparent;
+            transition: 0.5s;
+            &:hover {
+                border: 1px solid $main-color;
+                color: #333;
+            }
+        }
+        .ant-btn {
+            color: #757575;
+            &:hover {
+                border-color: $main-color;
+                color: #333;
+            }
+        }
+    }
+    .shrink-header {
+        height: $header-height;
+        border-top: 1px solid #e5e5e5;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 0 100px;
+        @include flex(center, space-around);
+        
+        @include tablet {
+            display: none;
+        }
+
+        .back-home {
+            & > span {
+                padding: 5px;
+                border-radius: 50%;
+                background-color: #e5e5e5;
+                transition: 0.5s;
+                cursor: pointer;
+                &:hover {
+                    background-color: $main-color;
+                }
+                svg {
+                    color: $main-color;
+                    transition: 0.5s;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .btn-all-category {
+            border: none;
+        }
+    }
+
+
+}
